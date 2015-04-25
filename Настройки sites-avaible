@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+ ServerAlias test
+ DocumentRoot "/home/oleg/server/test/"
+
+ <Directory "/home/oleg/server/test">
+   Order allow,deny
+   Allow from all
+   # New directive needed in Apache 2.4.3: 
+   Require all granted
+AllowOverride All
+</Directory>
+
+
+</VirtualHost>
