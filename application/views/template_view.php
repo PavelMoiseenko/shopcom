@@ -28,6 +28,7 @@
 		</section>
 		<ul id="nav">
 			<?php 
+				/**/
 				if(!isset($_SESSION['admin']) && !isset($_SESSION['user'])){
 					echo "<li class='active'><a href='/'>АДМИН</a></li>";
 				}
