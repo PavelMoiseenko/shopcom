@@ -30,7 +30,7 @@
 			<?php 
 				/**/
 				if(!isset($_SESSION['admin']) && !isset($_SESSION['user'])){
-					echo "<li class='active'><a href='/'>АДМИН</a></li>";
+					echo "<li class='active'><a href='/'>ВХОД</a></li>";
 				}
 				if(isset($_SESSION['admin'])){
 					echo "<li><a href='/login/edit'>РЕДАКТОР</a></li>";
